@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Management;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DriveInfo
 {
 	public class DriveManagement
 	{
-		private List<DriveModel> _driveModels;
+		private readonly List<DriveModel> _driveModels;
 
 		public DriveManagement()
 		{
@@ -25,7 +23,7 @@ namespace DriveInfo
 		private void ManageObject()
 		{
 			ManagementObjectSearcher driveQuery = new ManagementObjectSearcher("select * from Win32_DiskDrive");
-			foreach (ManagementObject drive in driveQuery.Get())
+			foreach (ManagementObject drive in driveQuery.Get().Cast<ManagementObject>())
 			{
 				this.FillDriveInfo(drive);
 				this.ManageObject(drive);
@@ -36,7 +34,7 @@ namespace DriveInfo
 		{
 			string partitionQueryText = string.Format("associators of {{{0}}} where AssocClass = Win32_DiskDriveToDiskPartition", drive.Path.RelativePath);
 			ManagementObjectSearcher partitionQuery = new ManagementObjectSearcher(partitionQueryText);
-			foreach (ManagementObject partition in partitionQuery.Get())
+			foreach (ManagementObject partition in partitionQuery.Get().Cast<ManagementObject>())
 			{
 				this.ManageObject(drive, partition);
 			}
@@ -46,7 +44,7 @@ namespace DriveInfo
 		{
 			string logicalDriveQueryText = string.Format("associators of {{{0}}} where AssocClass = Win32_LogicalDiskToPartition", partition.Path.RelativePath);
 			ManagementObjectSearcher logicalDriveQuery = new ManagementObjectSearcher(logicalDriveQueryText);
-			foreach (ManagementObject logicalDrive in logicalDriveQuery.Get())
+			foreach (ManagementObject logicalDrive in logicalDriveQuery.Get().Cast<ManagementObject>())
 			{
 				this.ManageObject(drive, partition, logicalDrive);
 			}
@@ -59,14 +57,19 @@ namespace DriveInfo
 
 		private void FillDriveInfo(ManagementObject drive)
 		{
-			this._driveModels.Add(new DriveModel()
+			var model = new DriveModel()
 			{
 				Model = Convert.ToString(drive.Properties["Model"].Value),
 				SerialNumber = Convert.ToString(drive.Properties["SerialNumber"].Value),
-				MemoryCapabilities = (string[])drive.Properties["CapabilityDescriptions"].Value,
-				Partitions = new List<DrivePartitionModel>(),
-				AtaStandard = Convert.ToString(drive.Properties["InterfaceType"].Value),
-			});
+				MemoryCapabilities = (string[]) drive.Properties["CapabilityDescriptions"].Value,
+				Partitions = new List<DrivePartitionModel>()
+			};
+			if (Convert.ToString(drive.Properties["MediaType"].Value) != "Removable Media")
+			{
+				model.DMAChannel = this.GetDMAChannel();
+				model.Protocol = this.GetAccessProtocol();
+			}
+			this._driveModels.Add(model);
 		}
 
 		private void FillLogicalDrivesInfo(ManagementObject drive, ManagementObject logicalDrive)
@@ -86,6 +89,32 @@ namespace DriveInfo
 
 			model.TakenMemory = model.AllMemory - model.FreeMemory;
 			driveModel.Partitions.Add(model);
+		}
+
+		private string GetDMAChannel()
+		{
+			WqlObjectQuery q = new WqlObjectQuery("SELECT * FROM Win32_DMAChannel");
+			ManagementObjectSearcher res = new ManagementObjectSearcher(q);
+			var x = res.Get();
+			string caption = string.Empty;
+			foreach (ManagementObject o in res.Get())
+			{
+				caption = o["Caption"].ToString();
+			}
+			return caption;
+		}
+
+		private string GetAccessProtocol()
+		{
+			WqlObjectQuery q = new WqlObjectQuery("SELECT * FROM Win32_IDEController");
+			ManagementObjectSearcher res = new ManagementObjectSearcher(q);
+			var x = res.Get();
+			int protocol = 0;
+			foreach (ManagementObject o in res.Get())
+			{
+				protocol = Convert.ToInt32(o["ProtocolSupported"]);
+			}
+			return Protocols.GetProtocol(protocol);
 		}
 	}
 }

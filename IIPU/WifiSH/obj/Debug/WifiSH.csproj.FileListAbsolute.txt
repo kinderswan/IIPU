@@ -1,0 +1,10 @@
+C:\Users\Pavel\Desktop\IIPU\WifiSH\obj\Debug\WifiSH.csprojResolveAssemblyReference.cache
+C:\Users\Pavel\Desktop\IIPU\WifiSH\bin\Debug\WifiSH.dll
+C:\Users\Pavel\Desktop\IIPU\WifiSH\bin\Debug\WifiSH.pdb
+C:\Users\Pavel\Desktop\IIPU\WifiSH\obj\Debug\WifiSH.dll
+C:\Users\Pavel\Desktop\IIPU\WifiSH\obj\Debug\WifiSH.pdb
+D:\GrowPortal\IIPU\WifiSH\bin\Debug\WifiSH.dll
+D:\GrowPortal\IIPU\WifiSH\bin\Debug\WifiSH.pdb
+D:\GrowPortal\IIPU\WifiSH\obj\Debug\WifiSH.csprojResolveAssemblyReference.cache
+D:\GrowPortal\IIPU\WifiSH\obj\Debug\WifiSH.dll
+D:\GrowPortal\IIPU\WifiSH\obj\Debug\WifiSH.pdb

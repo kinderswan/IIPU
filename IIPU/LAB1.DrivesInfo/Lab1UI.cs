@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DriveInfo;
 
@@ -19,7 +14,7 @@ namespace LAB1.DrivesInfo
 
 		public Lab1UI()
 		{
-			InitializeComponent();
+			this.InitializeComponent();
 			this._lab1UiService = new LAB1UIService();
 			this._driveModels = this._lab1UiService.GetDrivesInfo();
 		}
@@ -43,7 +38,13 @@ namespace LAB1.DrivesInfo
 			this.driveModelsInfoListBox.Items.Clear();
 			string selectedItem = ((ListBox) sender).SelectedItem.ToString().Replace("Model: ", "");
 			DriveModel driveInfo = this._driveModels.FirstOrDefault(x => x.Model == selectedItem);
-			this.driveModelsInfoListBox.Items.Add("AtaStandard: " + driveInfo.AtaStandard);
+			if (driveInfo == null)
+			{
+				return;
+			}
+
+			this.driveModelsInfoListBox.Items.Add("DMAChannel: " + driveInfo.DMAChannel);
+			this.driveModelsInfoListBox.Items.Add("Protocol: " + driveInfo.Protocol);
 			this.driveModelsInfoListBox.Items.Add("SerialNumber: " + driveInfo.SerialNumber);
 			foreach (string memoryCapability in driveInfo.MemoryCapabilities)
 			{
@@ -56,7 +57,7 @@ namespace LAB1.DrivesInfo
 		private void FillLogicalDrivesModelListbox(DriveModel selectedDrive)
 		{
 			this.logicalDriveModelsListBox.Items.Clear();
-			foreach (var partition in selectedDrive.Partitions)
+			foreach (DrivePartitionModel partition in selectedDrive.Partitions)
 			{
 				this.logicalDriveModelsListBox.Items.Add("Name: " + partition.Letter);
 			}
@@ -73,6 +74,10 @@ namespace LAB1.DrivesInfo
 			}
 
 			this.logicalDrivesInfoListBox.Items.Clear();
+			if (selected == null)
+			{
+				return;
+			}
 			this.logicalDrivesInfoListBox.Items.Add("Total Memory: " + selected.AllMemory);
 			this.logicalDrivesInfoListBox.Items.Add("Free Memory: " + selected.FreeMemory);
 			this.logicalDrivesInfoListBox.Items.Add("Taken Memory: " + selected.TakenMemory);

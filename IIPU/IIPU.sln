@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveInfo", "DriveInfo\Driv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB1.DrivesInfo", "LAB1.DrivesInfo\LAB1.DrivesInfo.csproj", "{D7976809-519C-4685-AB60-A00780295383}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USBEject", "USBEject\USBEject.csproj", "{5B68F5EA-218C-44E1-92F3-4615F5FB71BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsbEjectUI", "UsbEjectUI\UsbEjectUI.csproj", "{AD64DF30-2976-415B-AB44-E1DF8485B3E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifiSH", "WifiSH\WifiSH.csproj", "{DFB099CC-F1CE-417A-A351-17F1CD853DCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication3", "ConsoleApplication3\ConsoleApplication3.csproj", "{1510F7BD-3584-4022-B1F8-A4CAD20796B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +29,22 @@ Global
 		{D7976809-519C-4685-AB60-A00780295383}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7976809-519C-4685-AB60-A00780295383}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7976809-519C-4685-AB60-A00780295383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B68F5EA-218C-44E1-92F3-4615F5FB71BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B68F5EA-218C-44E1-92F3-4615F5FB71BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B68F5EA-218C-44E1-92F3-4615F5FB71BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B68F5EA-218C-44E1-92F3-4615F5FB71BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD64DF30-2976-415B-AB44-E1DF8485B3E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD64DF30-2976-415B-AB44-E1DF8485B3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD64DF30-2976-415B-AB44-E1DF8485B3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD64DF30-2976-415B-AB44-E1DF8485B3E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB099CC-F1CE-417A-A351-17F1CD853DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB099CC-F1CE-417A-A351-17F1CD853DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB099CC-F1CE-417A-A351-17F1CD853DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB099CC-F1CE-417A-A351-17F1CD853DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1510F7BD-3584-4022-B1F8-A4CAD20796B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1510F7BD-3584-4022-B1F8-A4CAD20796B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1510F7BD-3584-4022-B1F8-A4CAD20796B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1510F7BD-3584-4022-B1F8-A4CAD20796B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

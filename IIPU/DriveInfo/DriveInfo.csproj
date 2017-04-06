@@ -51,6 +51,7 @@
     <Compile Include="DriveModel.cs" />
     <Compile Include="DrivePartitionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocols.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

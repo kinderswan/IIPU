@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DriveInfo
 {
@@ -12,7 +8,9 @@ namespace DriveInfo
 
 		public string SerialNumber { get; set; }
 
-		public string AtaStandard { get; set; }
+		public string DMAChannel { get; set; }
+
+		public string Protocol { get; set; }
 
 		public string[] MemoryCapabilities { get; set; }
 

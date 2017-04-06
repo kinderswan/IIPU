@@ -2,6 +2,5 @@ D:\GrowPortal\IIPU\DriveInfo\bin\Debug\DriveInfo.dll
 D:\GrowPortal\IIPU\DriveInfo\bin\Debug\DriveInfo.pdb
 D:\GrowPortal\IIPU\DriveInfo\bin\Debug\System.Management.dll
 D:\GrowPortal\IIPU\DriveInfo\bin\Debug\System.Management.Instrumentation.dll
-D:\GrowPortal\IIPU\DriveInfo\obj\Debug\DriveInfo.csprojResolveAssemblyReference.cache
 D:\GrowPortal\IIPU\DriveInfo\obj\Debug\DriveInfo.dll
 D:\GrowPortal\IIPU\DriveInfo\obj\Debug\DriveInfo.pdb

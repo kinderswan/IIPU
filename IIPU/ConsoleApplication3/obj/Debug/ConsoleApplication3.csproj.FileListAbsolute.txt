@@ -1,0 +1,16 @@
+C:\Users\Pavel\Desktop\IIPU\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\Pavel\Desktop\IIPU\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\Pavel\Desktop\IIPU\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+C:\Users\Pavel\Desktop\IIPU\ConsoleApplication3\bin\Debug\WifiSH.dll
+C:\Users\Pavel\Desktop\IIPU\ConsoleApplication3\bin\Debug\WifiSH.pdb
+C:\Users\Pavel\Desktop\IIPU\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Pavel\Desktop\IIPU\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\Pavel\Desktop\IIPU\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+D:\GrowPortal\IIPU\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+D:\GrowPortal\IIPU\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+D:\GrowPortal\IIPU\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+D:\GrowPortal\IIPU\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+D:\GrowPortal\IIPU\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+D:\GrowPortal\IIPU\ConsoleApplication3\bin\Debug\WifiSH.dll
+D:\GrowPortal\IIPU\ConsoleApplication3\bin\Debug\WifiSH.pdb
+D:\GrowPortal\IIPU\ConsoleApplication3\obj\Debug\ConsoleApplication3.csprojResolveAssemblyReference.cache
