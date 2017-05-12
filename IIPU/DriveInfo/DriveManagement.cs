@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Management;
 
@@ -12,6 +14,7 @@ namespace DriveInfo
 		public DriveManagement()
 		{
 			this._driveModels = new List<DriveModel>();
+		    var x = this.GetAtaStrings();
 		}
 
 		public List<DriveModel>  GetDriveModels()
@@ -68,6 +71,7 @@ namespace DriveInfo
 			{
 				model.DMAChannel = this.GetDMAChannel();
 				model.Protocol = this.GetAccessProtocol();
+			    model.Atas = this.ParseAtaStrings();
 			}
 			this._driveModels.Add(model);
 		}
@@ -116,5 +120,24 @@ namespace DriveInfo
 			}
 			return Protocols.GetProtocol(protocol);
 		}
+
+	    private string GetAtaStrings()
+	    {
+            Process proc = new Process();
+            proc.StartInfo.CreateNoWindow = true;
+            proc.StartInfo.FileName = Path.Combine(Environment.CurrentDirectory, "TransferMode");
+
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.UseShellExecute = false;
+            proc.Start();
+            string output = proc.StandardOutput.ReadToEnd();
+            proc.WaitForExit();
+            return output;
+	    }
+
+	    private List<string> ParseAtaStrings()
+	    {
+	        return this.GetAtaStrings().Split(new string[] {"\r\n", "\n"}, StringSplitOptions.RemoveEmptyEntries).ToList();
+	    }
 	}
 }

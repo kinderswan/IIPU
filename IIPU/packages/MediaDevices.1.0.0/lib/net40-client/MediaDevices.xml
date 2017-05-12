@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MediaDevices</name>
+    </assembly>
+    <members>
+        <member name="T:MediaDevices.DevicePowerSource">
+            <summary>
+            Power source of the device
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DevicePowerSource.Battery">
+            <summary>
+            The power source of the device is battery.
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DevicePowerSource.External">
+            <summary>
+            The power source of the device is external.
+            </summary>
+        </member>
+        <member name="T:MediaDevices.DeviceTransport">
+            <summary>
+            device transports
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceTransport.Unspecified">
+            <summary>
+            unspecified transport
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceTransport.USB">
+            <summary>
+            USB transport
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceTransport.IP">
+            <summary>
+            IP transport
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceTransport.Bluetooth">
+            <summary>
+            bluetooth transport
+            </summary>
+        </member>
+        <member name="T:MediaDevices.DeviceType">
+            <summary>
+            device types
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceType.Generic">
+            <summary>
+            generic device type
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceType.Camera">
+            <summary>
+            camera device type
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceType.MediaPlayer">
+            <summary>
+            media player device type
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceType.Phone">
+            <summary>
+            phone device type
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceType.Video">
+            <summary>
+            video device type
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceType.PersonalInformationManager">
+            <summary>
+            personal information manager device type
+            </summary>
+        </member>
+        <member name="F:MediaDevices.DeviceType.AudioRecorder">
+            <summary>
+            audio recorderdevice type
+            </summary>
+        </member>
+        <member name="T:MediaDevices.MediaDevice">
+            <summary>
+            Represents a portable device.
+            </summary>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.GetDevices">
+            <summary>
+            Returns an enumerable collection of currently available portable devices.
+            </summary>
+            <returns>>An enumerable collection of portable devices currently available.</returns>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.Dispose">
+            <summary>
+            Releases the resources used by the PortableDevices.PortableDevice.
+            </summary>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.IsConnected">
+            <summary>
+            Is portable device connected.
+            </summary>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.DeviceId">
+            <summary>
+            Device Id of the portable device.
+            </summary>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.Description">
+            <summary>
+            Description of the portable device.
+            </summary>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.FriendlyName">
+            <summary>
+            Friendly name of the portable device.
+            </summary>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.Manufacture">
+            <summary>
+            Manufacture of the portable device.
+            </summary>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.SyncPartner">
+            <summary>
+            Sync partner of the device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.FirmwareVersion">
+            <summary>
+            Firmware version of the portable device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.PowerLevel">
+            <summary>
+            Battery level of the portable device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.PowerSource">
+            <summary>
+            Power source of the device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.Protocol">
+            <summary>
+            Protocol of the device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.Manufacturer">
+            <summary>
+            Manufacturer of the device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.Model">
+            <summary>
+            Model of the portable device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.SerialNumber">
+            <summary>
+            Serial number of the portable device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.SupportsNonConsumable">
+            <summary>
+            Supports non consumable.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.SupportedFormatsAreOrdered">
+            <summary>
+            Supported formats are ordered.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.DeviceType">
+            <summary>
+            Device type of the portable device.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="P:MediaDevices.MediaDevice.Transport">
+            <summary>
+            Device transport.
+            </summary>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.Connect">
+            <summary>
+            Connect to the portable device.
+            </summary>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.Disconnect">
+            <summary>
+            Disconnect from the portable device.
+            </summary>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.EnumerateDirectories(System.String)">
+            <summary>
+            Returns an enumerable collection of directory names in a specified path.
+            </summary>
+            <param name="path">The directory to search.</param>
+            <returns>An enumerable collection of directory names in the directory specified by path.</returns>
+            <exception cref="T:System.IO.IOException">path is a file name.</exception>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">path is invalid.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.EnumerateFiles(System.String)">
+            <summary>
+            Returns an enumerable collection of file names in a specified path.
+            </summary>
+            <param name="path">The directory to search.</param>
+            <returns>An enumerable collection of file names in the directory specified by path.</returns>
+            <exception cref="T:System.IO.IOException">path is a file name.</exception>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">path is invalid.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.EnumerateFileSystemEntries(System.String)">
+            <summary>
+            Returns an enumerable collection of file-system entries in a specified path.
+            </summary>
+            <param name="path">The directory to search.</param>
+            <returns>An enumerable collection of file-system entries in the directory specified by path.</returns>
+            <exception cref="T:System.IO.IOException">path is a file name.</exception>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">path is invalid.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.CreateDirectory(System.String)">
+            <summary>
+            Creates all directories and subdirectories in the specified path.
+            </summary>
+            <param name="path">The directory path to create.</param>
+            <exception cref="T:System.IO.IOException">path is a file name.</exception>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">path is invalid.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.DeleteDirectory(System.String,System.Boolean)">
+            <summary>
+            Deletes the specified directory and, if indicated, any subdirectories and files in the directory.
+            </summary>
+            <param name="path">The name of the directory to remove.</param>
+            <param name="recursive">true to remove directories, subdirectories, and files in path; otherwise, false.</param>
+            <exception cref="T:System.IO.IOException">path is a file name.</exception>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">path is invalid.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.DirectoryExists(System.String)">
+            <summary>
+            Determines whether the given path refers to an existing directory on disk.
+            </summary>
+            <param name="path">The path to test.</param>
+            <returns>true if path refers to an existing directory; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.DownloadFile(System.String,System.IO.Stream)">
+            <summary>
+            Download data from a file on a portable device to a stream.
+            </summary>
+            <param name="path">The path to the file.</param>
+            <param name="stream">The stream to download to.</param>
+            <exception cref="T:System.IO.IOException">path is a file name.</exception>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">path is invalid.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.UploadFile(System.IO.Stream,System.String)">
+            <summary>
+            Upload data from a stream to a file on a portable device.
+            </summary>
+            <param name="stream">The stream to upload from.</param>
+            <param name="path">The path to the file.</param>
+            <exception cref="T:System.IO.IOException">path is a file name.</exception>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">path is invalid.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.FileExists(System.String)">
+            <summary>
+            Determines whether the specified file exists.
+            </summary>
+            <param name="path">The file to check.</param>
+            <returns>true if the  path contains the name of an existing file; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.DeleteFile(System.String)">
+            <summary>
+            Deletes the specified file.
+            </summary>
+            <param name="path">The name of the file to be deleted. Wildcard characters are not supported.</param>
+            <exception cref="T:System.IO.IOException">path is a file name.</exception>
+            <exception cref="T:System.ArgumentException">path is a zero-length string, contains only white space, or contains invalid characters as defined by System.IO.Path.GetInvalidPathChars.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">path is invalid.</exception>
+            <exception cref="T:MediaDevices.NotConnectedException">device is not connected.</exception>
+        </member>
+        <member name="M:MediaDevices.MediaDevice.ToString">
+            <summary>
+            Returns a string that represents the current media device.
+            </summary>
+            <returns>A string that represents the current media device.</returns>
+        </member>
+        <member name="T:MediaDevices.NotConnectedException">
+            <summary>
+            Represent error that occur if portable device is not connected.
+            </summary>
+        </member>
+        <member name="M:MediaDevices.NotConnectedException.#ctor">
+            <summary>
+            Initializes a new instance of the PortableDevices.NotConnectedException class.
+            </summary>
+        </member>
+        <member name="M:MediaDevices.NotConnectedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the PortableDevices.NotConnectedException class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:MediaDevices.NotConnectedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the PortableDevices.NotConnectedException class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+    </members>
+</doc>

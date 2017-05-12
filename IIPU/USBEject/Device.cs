@@ -169,7 +169,6 @@ namespace USBEject
 				if (allowUI)
 				{
 					Native.CM_Request_Device_Eject_NoUi(device.InstanceHandle, IntPtr.Zero, null, 0, 0);
-					// don't handle errors, there should be a UI for this
 				}
 				else
 				{

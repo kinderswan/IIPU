@@ -22,3 +22,18 @@ C:\Users\Pavel\Desktop\IIPU\UsbEjectUI\obj\Debug\UsbEjectUI.Properties.Resources
 C:\Users\Pavel\Desktop\IIPU\UsbEjectUI\obj\Debug\UsbEjectUI.csproj.GenerateResource.Cache
 D:\GrowPortal\IIPU\UsbEjectUI\bin\Debug\DriveInfo.dll
 D:\GrowPortal\IIPU\UsbEjectUI\bin\Debug\DriveInfo.pdb
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\UsbEjectUI.exe.config
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\UsbEjectUI.exe
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\UsbEjectUI.pdb
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\USBEject.dll
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\USBEject.pdb
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\obj\Debug\UsbEjectUI.csprojResolveAssemblyReference.cache
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\obj\Debug\UsbEjectUI.Form1.resources
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\obj\Debug\UsbEjectUI.Properties.Resources.resources
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\obj\Debug\UsbEjectUI.csproj.GenerateResource.Cache
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\obj\Debug\UsbEjectUI.exe
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\obj\Debug\UsbEjectUI.pdb
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\MTPDevices.dll
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\Interop.PortableDeviceApiLib.dll
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\Interop.PortableDeviceTypesLib.dll
+C:\Users\Pavel\Desktop\iipu v2\UsbEjectUI\bin\Debug\MTPDevices.pdb

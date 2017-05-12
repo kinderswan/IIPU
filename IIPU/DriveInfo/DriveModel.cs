@@ -12,6 +12,8 @@ namespace DriveInfo
 
 		public string Protocol { get; set; }
 
+        public List<string> Atas { get; set; }
+
 		public string[] MemoryCapabilities { get; set; }
 
 		public List<DrivePartitionModel> Partitions { get; set; }

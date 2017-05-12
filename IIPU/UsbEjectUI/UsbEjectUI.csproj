@@ -34,14 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -79,9 +73,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DriveInfo\DriveInfo.csproj">
-      <Project>{f4d0eb07-5241-4280-b697-00c0a7c66e01}</Project>
-      <Name>DriveInfo</Name>
+    <ProjectReference Include="..\MTPDevices\MTPDevices.csproj">
+      <Project>{690377b4-fa70-4fc7-81a2-19847bacb91b}</Project>
+      <Name>MTPDevices</Name>
     </ProjectReference>
     <ProjectReference Include="..\USBEject\USBEject.csproj">
       <Project>{5B68F5EA-218C-44E1-92F3-4615F5FB71BB}</Project>

@@ -9,3 +9,14 @@ D:\GrowPortal\IIPU\LAB1.DrivesInfo\bin\Debug\DriveInfo.dll
 D:\GrowPortal\IIPU\LAB1.DrivesInfo\bin\Debug\DriveInfo.pdb
 D:\GrowPortal\IIPU\LAB1.DrivesInfo\obj\Debug\LAB1.DrivesInfo.exe
 D:\GrowPortal\IIPU\LAB1.DrivesInfo\obj\Debug\LAB1.DrivesInfo.pdb
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\bin\Debug\LAB1.DrivesInfo.exe.config
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\obj\Debug\LAB1.DrivesInfo.exe
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\obj\Debug\LAB1.DrivesInfo.pdb
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\bin\Debug\LAB1.DrivesInfo.exe
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\bin\Debug\LAB1.DrivesInfo.pdb
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\bin\Debug\DriveInfo.dll
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\bin\Debug\DriveInfo.pdb
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\obj\Debug\LAB1.DrivesInfo.csprojResolveAssemblyReference.cache
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\obj\Debug\LAB1.DrivesInfo.Lab1UI.resources
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\obj\Debug\LAB1.DrivesInfo.Properties.Resources.resources
+C:\Users\Pavel\Desktop\iipu v2\LAB1.DrivesInfo\obj\Debug\LAB1.DrivesInfo.csproj.GenerateResource.Cache

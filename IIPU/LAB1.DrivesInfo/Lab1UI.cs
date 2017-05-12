@@ -50,8 +50,15 @@ namespace LAB1.DrivesInfo
 			{
 				this.driveModelsInfoListBox.Items.Add("Memory Capability: " + memoryCapability);
 			}
+		    if (driveInfo.Atas != null)
+		    {
+		        foreach (string ata in driveInfo.Atas)
+		        {
+		            this.driveModelsInfoListBox.Items.Add("Ata support: " + ata);
+		        }
+		    }
 
-			this.FillLogicalDrivesModelListbox(driveInfo);
+		    this.FillLogicalDrivesModelListbox(driveInfo);
 		}
 
 		private void FillLogicalDrivesModelListbox(DriveModel selectedDrive)

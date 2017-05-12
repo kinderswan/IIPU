@@ -4,3 +4,10 @@ D:\GrowPortal\IIPU\DriveInfo\bin\Debug\System.Management.dll
 D:\GrowPortal\IIPU\DriveInfo\bin\Debug\System.Management.Instrumentation.dll
 D:\GrowPortal\IIPU\DriveInfo\obj\Debug\DriveInfo.dll
 D:\GrowPortal\IIPU\DriveInfo\obj\Debug\DriveInfo.pdb
+C:\Users\Pavel\Desktop\iipu v2\DriveInfo\bin\Debug\DriveInfo.dll
+C:\Users\Pavel\Desktop\iipu v2\DriveInfo\bin\Debug\DriveInfo.pdb
+C:\Users\Pavel\Desktop\iipu v2\DriveInfo\bin\Debug\System.Management.dll
+C:\Users\Pavel\Desktop\iipu v2\DriveInfo\bin\Debug\System.Management.Instrumentation.dll
+C:\Users\Pavel\Desktop\iipu v2\DriveInfo\obj\Debug\DriveInfo.csprojResolveAssemblyReference.cache
+C:\Users\Pavel\Desktop\iipu v2\DriveInfo\obj\Debug\DriveInfo.dll
+C:\Users\Pavel\Desktop\iipu v2\DriveInfo\obj\Debug\DriveInfo.pdb

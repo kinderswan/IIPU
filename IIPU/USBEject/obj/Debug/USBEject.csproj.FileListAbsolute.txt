@@ -8,3 +8,8 @@ C:\Users\Pavel\Desktop\IIPU\USBEject\obj\Debug\USBEject.csprojResolveAssemblyRef
 C:\Users\Pavel\Desktop\IIPU\USBEject\obj\Debug\USBEject.dll
 C:\Users\Pavel\Desktop\IIPU\USBEject\obj\Debug\USBEject.pdb
 D:\GrowPortal\IIPU\USBEject\obj\Debug\USBEject.csprojResolveAssemblyReference.cache
+C:\Users\Pavel\Desktop\iipu v2\USBEject\bin\Debug\USBEject.dll
+C:\Users\Pavel\Desktop\iipu v2\USBEject\bin\Debug\USBEject.pdb
+C:\Users\Pavel\Desktop\iipu v2\USBEject\obj\Debug\USBEject.csprojResolveAssemblyReference.cache
+C:\Users\Pavel\Desktop\iipu v2\USBEject\obj\Debug\USBEject.dll
+C:\Users\Pavel\Desktop\iipu v2\USBEject\obj\Debug\USBEject.pdb

@@ -57,9 +57,6 @@ namespace USBEject
 			get { return (this.Disks != null) && this.Disks.Any(disk => disk.IsUsb); }
 		}
 
-		/// <summary>
-		///     Gets a list of underlying disks for this volume.
-		/// </summary>
 		public List<Device> Disks
 		{
 			get
